@@ -65,5 +65,19 @@ This project fine-tunes the **Open-Unmix** model for **Music Source Separation (
 ## How to Use
 For inference with the fine-tuned model:  
 ```python
-from openunmix import predict  
-predict.separate(mix="your_audio.wav", targets=["acoustic_guitar"])
+# Step 1: Clone the Repository
+git clone https://github.com/yourusername/yourrepository.git
+cd yourrepository
+
+# Step 2: Install Requirements
+pip install -r requirements.txt
+
+# Step 3: Preprocess the Data
+python Preprocessing/preprocessing.py
+
+# Step 4: Train the Model
+python Training/main.py
+
+# Step 5: Evaluate the Model
+python Evaluation/main_calc_metrics.py
+
